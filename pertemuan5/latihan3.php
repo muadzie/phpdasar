@@ -1,8 +1,7 @@
 <?php
-$mahasiswa = [
-    ["ilham muadz fakhrizi", "0483840383", "teknik informatika", "muadzie@gmail.com"],
-    ["abdull ghofur", "0573840383", "teknik informatika", "abdullghofur12@gmail.com"],
-    ["jeki firmanto", "0657840383", "teknik informatika", "jekifirmanto44@gmail.com"]
+$pertanian = [
+    ["supartina,S.Keb", "pertanyaan kesehatan", "082345677689", "abcd****@gmail.com"],
+
 
 
 ];
@@ -11,23 +10,22 @@ $mahasiswa = [
 <html lang="en">
 
 <head>
-    <title>Daftar mahasiswa</title>
+    <title>ASK TO BIDAN HEALTY</title>
 </head>
 
 <body>
 
-    <h1>daftar mahasiswa</h1>
+    <h1>ASK TO BIDAN HEALTY</h1>
 
-    <?php foreach ($mahasiswa as $mhs) : ?>
+    <?php foreach ($pertanian as $tani) : ?>
     <ul>
-        <li>nama : <?php echo $mhs[0]; ?></li>
-        <li>nrp : <?php echo $mhs[1]; ?></li>
-        <li>jurusan : <?php echo $mhs[2]; ?></li>
-        <li>email : <?php echo $mhs[3]; ?></li>
+        <li>NAMA BIDAN : <?= $tani[0]; ?></li>
+        <li>TENTANG : <?= $tani[1]; ?></li>
+        <li>NO HP : <?= $tani[2]; ?></li>
+        <li>EMAIL : <?= $tani[3]; ?></li>
     </ul>
     <?php endforeach; ?>
-
-
+    <br>
 </body>
 
 </html>
